@@ -27,7 +27,7 @@ $ python kmer-collapse.py
 }
 ```
 
-In this usage example, `WAAAAAAAAA` can expand to `AAAAAAAAAA` and `TAAAAAAAAA`, while `ASAAAAAAAA` can expand to `ACAAAAAAAA` and `AGAAAAAAAA`, covering the input set. This encoding is the smallest set of strings that covers the original input, when using IUPAC mapping.
+In this usage example, `WAAAAAAAAA` can expand to `AAAAAAAAAA` and `TAAAAAAAAA`, while `ASAAAAAAAA` can expand to `ACAAAAAAAA` and `AGAAAAAAAA`, covering the input set. This encoding covers the original input, when using IUPAC mapping, and is one of two solutions that is also the smallest such set.
 
 ## Notes
 
