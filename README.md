@@ -27,6 +27,8 @@ $ python kmer-collapse.py
 }
 ```
 
+In this usage example, `WAAAAAAAAA` can expand to `AAAAAAAAAA` and `TAAAAAAAAA`, while `ASAAAAAAAA` can expand to `ACAAAAAAAA` and `AGAAAAAAAA`, covering the input set. This encoding is the smallest set of strings that covers the original input, when using IUPAC mapping.
+
 ## Notes
 
 This has not been tested with any kmer sets but those examples provided. However, it aims to be scalable by pruning combinations of sub-kmers along the way, which would otherwise yield incorrect encodings. This also uses a trie for faster prefix testing. If futher performance is needed, some easy wins would be to cache sub-kmer tests, since most of these test outcomes would be redundant.
