@@ -33,7 +33,7 @@ In this usage example, `WAAAAAAAAA` can expand to `AAAAAAAAAA` and `TAAAAAAAAA`,
 
 This aims for the smallest set of encoded strings. However, this does not report all possible such solutions in case there are more than one, as shown in the example above.
 
-This has not been tested with any kmer sets but those examples provided. However, it aims to be scalable by pruning combinations of sub-kmers along the way that would yield incorrect encodings. This also uses a trie for fast, space-efficient prefix testing. If futher performance is needed, some easy wins would be to cache sub-kmer prefix tests, as most of these tests will be redundant.
+This has not been tested with any kmer sets but those examples provided. However, it aims to be scalable by pruning combinations of sub-kmers constructed along the way that would yield incorrect encodings. This also uses a trie for fast, space-efficient prefix testing. If further performance is needed, some easy wins would be to cache sub-kmer prefix tests, as most of these tests will be redundant.
 
 Additionally, no error checking is done on the input kmer alphabet, the consistency of kmer lengths, or the uniqueness of kmers. It may be useful to validate input before using this script.
 
